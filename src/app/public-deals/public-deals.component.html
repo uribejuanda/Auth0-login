@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-sm-6 col-md-4" *ngFor="let deal of dealsObservable | async">
+        <div class="thumbnail">
+            <div class="caption">
+                <h3>{{deal.name}}</h3>
+                <p>{{deal.description}}</p>
+                <p>
+                    <span>Original</span>
+                    <span class="pull-right">sale</span>
+                </p>
+                <a href="#" class="btn btn-primary" role="button">{{deal.originalPrice}}</a>
+                <a href="#" class="btn btn-default pull-right" role="button">{{deal.salePrice}}</a>
+            </div>
+        </div>
+    </div>
+</div>
